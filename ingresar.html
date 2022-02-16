@@ -8,6 +8,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script src="extensions/editable/bootstrap-table-editable.js"></script>
+    <script src="./scripts/app.js"></script>
   </head>
   <body>
 
@@ -39,10 +40,10 @@
       <h3 class="card-header text-center font-weight-bold text-uppercase py-4">
         Detalle
       </h3>
-      <button type="button" class="btn btn-primary"><i class="bi bi-plus"></i> Agregar fila</button>
+      <button onclick="addRow()" type="button" class="btn btn-primary"><i class="bi bi-plus"></i> Agregar fila</button>
       <div class="card-body">
         <div id="table" class="table-editable">
-          <table class="table table-bordered table-responsive-md table-striped text-left">
+          <table class="table table-bordered table-responsive-md table-striped text-left" id="MyTable">
             <thead>
               <tr>
                 <th class="text-center">Producto</th>
